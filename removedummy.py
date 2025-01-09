@@ -12,7 +12,7 @@ import os
 script_path = os.path.dirname(os.path.realpath(__file__))
 count = 0 # I just like seeing numbers :))
 
-selfDestruct = False # Set to True if you want this file to delete itself
+selfDestruct = True # Set to True if you want this file to delete itself
 
 # Walk through the directory and delete the dummy files
 for root, dirs, files in os.walk(script_path):
