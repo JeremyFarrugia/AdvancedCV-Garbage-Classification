@@ -17,7 +17,7 @@ selfDestruct = True # Set to True if you want this file to delete itself
 # Walk through the directory and delete the dummy files
 for root, dirs, files in os.walk(script_path):
     for file in files:
-        if 'dummy' in file and (file != 'removedummy.py' and not selfDestruct):
+        if 'dummy' in file and (file != 'removedummy.py' or selfDestruct):
             os.remove(os.path.join(root, file))
             print(f"Deleted '{file}' in folder '{root}'")
             count += 1
