@@ -12,7 +12,7 @@ def prepare_yolov10_dataset():
     the required paths for training and evaluation.
     """
     # Define dataset structure
-    dataset_dir = "C:/Users/User/Desktop/Garbage-Classification/Garbage Detection.v3i.yolov5pytorch"
+    dataset_dir = os.path.join(os.path.dirname(__file__), "data-yolo")
     train_images = os.path.join(dataset_dir, "train/images")
     valid_images = os.path.join(dataset_dir, "valid/images")
     train_labels = os.path.join(dataset_dir, "train/labels")

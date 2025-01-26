@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     model = YOLO('yolov8m.pt')
 
-    datapath = os.path.join(os.path.dirname(__file__), 'data-yolov8', 'data.yaml')
+    datapath = os.path.join(os.path.dirname(__file__), 'data-yolo', 'data.yaml')
 
     model.train(
         data=datapath,
