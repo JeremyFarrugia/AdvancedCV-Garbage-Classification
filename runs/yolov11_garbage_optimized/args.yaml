@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolo11s.pt
-data: C:/Users/User/Desktop/Garbage-Classification/Garbage Detection.v3i.yolov5pytorch/data.yaml
+data: c:\Users\User\Desktop\Garbage-Classification\data-yolo\data.yaml
 epochs: 250
 time: null
 patience: 7
